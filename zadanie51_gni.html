@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 51</title>
+    <script>
+        var ile_gni = parseInt(prompt("Ile razy powtórzyć ?"));
+
+        var tekst_gni = prompt("Podaj Twoje inicjały :");
+
+        for (var i = 1; i <= ile_gni; i++) {
+
+            for (var k = 1; k <= i; k++) {
+                document.write("&nbsp;");
+            }
+
+            document.write(i + "_" + tekst_gni + "_" + i + "<br>");
+        }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

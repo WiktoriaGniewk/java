@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 44 - Kod</title>
+    <script type="text/javascript">
+        function okno_zamknij_gniewkowska() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="gniewkowska" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 44</title>
+</head>
+<body>
+<script>
+
+    const ile_razy_wys_gni = 13;
+    const wielk_lit_gni = 42;
+
+    document.write("ilość wykonania pętli = " + ile_razy_wys_gni + "<br>");
+    document.write("wielkość liter = " + wielk_lit_gni + "px<br><br>");
+
+    for(let i_gni=1; i_gni<=ile_razy_wys_gni; i_gni++) {
+        if(i_gni % 2 === 1) {
+            document.write("<span style='font-size:" + wielk_lit_gni + "px'>Gniewkowska</span><br>");
+        } else {
+            document.write("<span style='font-size:" + wielk_lit_gni + "px'>Wiktoria</span><br>");
+        }
+    }
+</script>
+</body>
+</html>
+
+        </textarea>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_gniewkowska()"/>
+    </form>
+</body>
+</html>

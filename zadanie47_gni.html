@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47</title>
+</head>
+<body>
+    <h2>Sprawdzanie czy boki tworzą trójkąt</h2>
+    <button onclick="sprawdzTrojkat()">Wprowadź boki trójkąta</button>
+
+    <script>
+        function sprawdzTrojkat() {
+            let a, b, c;
+            while (true) {
+                a = parseFloat(prompt("Podaj długość boku a:"));
+                b = parseFloat(prompt("Podaj długość boku b:"));
+                c = parseFloat(prompt("Podaj długość boku c:"));
+
+                if (a > 0 && b > 0 && c > 0 &&
+                    a + b > c && a + c > b && b + c > a) {
+                    
+                    document.write(`Boki tworzą trójkąt: a=${a}, b=${b}, c=${c}`);
+                    break;
+                } else {
+                    alert("wartości nie tworzą trójkąta.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

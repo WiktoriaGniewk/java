@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 56 - Kod</title>
+    <script type="text/javascript">
+        function okno_zamknij_gniewkowska() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="gniewkowska" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 56 - Liczby pierwsze</title>
+</head>
+<body>
+    <h2>Liczby ze wzoru w(i) = i*i + i + 41</h2>
+    <script>
+        for (let i_gni = 0; i_gni < 40; i_gni++) {
+            let w_gni = i_gni * i_gni + i_gni + 41;
+            document.write("i = " + i_gni + ", w(" + i_gni + ") = " + w_gni + "<br>");
+        }
+    </script>
+</body>
+</html>
+        </textarea>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_gniewkowska()"/>
+    </form>
+</body>
+</html>

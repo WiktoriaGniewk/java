@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 49</title>
+    <script type="text/javascript">
+        function okno_zamknij_gniewkowska() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="gniewkowska" cols="80" rows="20" readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 49</title>
+</head>
+<body>
+    <script>
+        let n_gni = parseInt(prompt("Podaj liczbę n="));
+        let silnia_gni = 1;
+
+        if (n_gni === 0) {
+            silnia_gni = 1;
+        } else if (n_gni > 0) {
+            for (let i = 1; i <= n_gni; i++) {
+                silnia_gni *= i;
+            }
+        } else {
+            document.write("Podano niepoprawną liczbę.");
+        }
+
+        if (n_gni >= 0) {
+            document.write("n=" + n_gni + "<br>");
+            document.write(n_gni + "!=" + silnia_gni);
+        }
+    </script>
+</body>
+</html>
+        </textarea>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_gniewkowska()"/>
+    </form>
+</body>
+</html>

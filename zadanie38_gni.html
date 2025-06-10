@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+            <html lang="pl">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Zadanie 38</title>
+            </head>
+            <body style="background-color: silver;">
+            
+                <script>
+                    
+                    var imie_gni = prompt("Podaj Imię:", "");
+                    var nazwisko_gni = prompt("Podaj Nazwisko:", "");
+                    let dzien_gni = prompt("Podaj dzień urodzenia:", "");
+                    var liczba = imie_gni.length;
+                    var liczba1 = liczba + 7;
+                    var liczba2 = nazwisko_gni.length;
+                    var liczba3 = liczba2 + 4;
+
+                    document.write('<p style=color: darkgreen;font-size: 42px;>Moje imię to: ' + imie_gni + " " + nazwisko_gni + "</p>");
+                    document.write('<p style=color: darkgreen;font-size: 42px;>liczba= ' + liczba + "</p>");
+                    document.write('<p style=color: darkgreen;font-size: 42px;>' + liczba + ' + 7 = ' + liczba1 + "</p>");
+                    document.write('<p style=color: darkgreen;font-size: 42px;>liczba2= ' + liczba2 + "</p>");
+                    document.write('<p style=color: darkgreen;font-size: 42px;>liczba3= ' + liczba2 + ' + 4 = ' + liczba3 + "</p>");
+                    
+                    document.write('<p style=color: red;font-size: 40px;>------------MENU------------</p>');
+    
+                </script>
+            
+                <div id="wyswietl"></div>
+                <button onclick="opcja()">Wybierz opcję</button>
+            
+            </body>
+            </html>
+            
