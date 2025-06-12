@@ -7,35 +7,24 @@
 <body>
     <pre id="wynik"></pre>
     <script>
-
         const imie = prompt("Podaj imię:");
         const nazwisko = prompt("Podaj nazwisko:");
-
-
         const liczbaLiterImienia = imie.length;
         const liczbaLiterNazwiska = nazwisko.length;
-
-
         const a = (liczbaLiterNazwiska % 4) + 5;
         const b = (liczbaLiterImienia % 6) + 20;
 
         let wynik = "";
-
-
         for(let i=0; i<b; i++) wynik += "*";
         wynik += "\n";
-
 
         for(let i=0; i<a-2; i++) {
             wynik += "*";
             for(let j=0; j<b-2; j++) wynik += " ";
             wynik += "*\n";
         }
-
-
         for(let i=0; i<b; i++) wynik += "*";
         wynik += "\n";
-
         document.getElementById("wynik").textContent = wynik;
     </script>
 </body>
