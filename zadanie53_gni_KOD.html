@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadanie 53 - Kod</title>
+    <title>Zadanie 53 kod</title>
     <script type="text/javascript">
         function okno_zamknij_gniewkowska() {
             window.close()
@@ -22,29 +22,21 @@
 </head>
 <body>
     <script>
-    var a_rom = parseInt(prompt("Podaj wysokość prostokąta (a):"));
-    var b_rom = parseInt(prompt("Podaj szerokość prostokąta (b):"));
-
-
-    for (var i = 0; i < b_rom; i++) {
+    var a_gni = parseInt(prompt("Podaj wysokość prostokąta (a):"));
+    var b_gni = parseInt(prompt("Podaj szerokość prostokąta (b):"));
+    for (var i = 0; i < b_gni; i++) {
         document.write("*");
     }
     document.write("<br>");
-
-
-    var wiersz_rom = "*";
-    for (var i = 1; i <= (b_rom - 2); i++) {
-        wiersz_rom = wiersz_rom + "&nbsp&nbsp";
+    var wiersz_gni = "*";
+    for (var i = 1; i <= (b_gni - 2); i++) {
+        wiersz_gni = wiersz_gni + "&nbsp&nbsp";
     }
-    wiersz_rom = wiersz_rom + "*";
-
-
-    for (var i = 0; i < a_rom - 2; i++) {
-        document.write(wiersz_rom + "<br>");
+    wiersz_gni = wiersz_gni + "*";
+    for (var i = 0; i < a_gni - 2; i++) {
+        document.write(wiersz_gni + "<br>");
     }
-
-
-    for (var i = 0; i < b_rom; i++) {
+    for (var i = 0; i < b_gni; i++) {
         document.write("*");
     }
     </script>
